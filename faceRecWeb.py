@@ -3,9 +3,6 @@ sys.path.insert(0, './face_recognition')
 
 import face_recognition
 import cv2
-#to draw facial features
-from PIL import Image, ImageDraw
-
 #Variable inits
 face_locations = []
 face_encodings = []
@@ -18,26 +15,14 @@ greenColor = (0, 255, 0)
 video_capture = cv2.VideoCapture(0)
 
 # Load 1st sample and learn.
-obama_image = face_recognition.load_image_file("obama.jpg")
-obama_face_encoding = face_recognition.face_encodings(obama_image)[0]
-
-# Load 2nd sample picture and learn.
-biden_image = face_recognition.load_image_file("biden.jpg")
-biden_face_encoding = face_recognition.face_encodings(biden_image)[0]
-
-# Load 3rd sample and learn.
 saikiran_image = face_recognition.load_image_file("sk.jpg")
 saikiran_encoding = face_recognition.face_encodings(saikiran_image)[0]
 
 # Arrays of known face encodings and their names
 known_face_encodings = [
-    obama_face_encoding,
-    biden_face_encoding,
     saikiran_encoding
 ]
 known_face_names = [
-    "Barack Obama",
-    "Joe Biden",
     "Kiran"
 ]
 
