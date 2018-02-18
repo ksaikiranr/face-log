@@ -14,10 +14,10 @@ The facial recognition process involves three steps:
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 ### Prerequisites
 Python 3:
-...
+```
 $ dnf install python3
-...
+```
 Numpy and opencv modules:
-...
+```
 $ dnf install numpy opencv*
-....
+```
