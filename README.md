@@ -21,3 +21,5 @@ Numpy and opencv modules:
 ```
 $ dnf install numpy opencv*
 ```
+### Running
+```python3 faceRecWeb.py```
