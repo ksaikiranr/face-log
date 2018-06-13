@@ -19,7 +19,7 @@ $ dnf install python3
 ```
 Numpy and opencv modules:
 ```
-$ dnf install numpy opencv*
+$ dnf install numpy opencv* face_recognition
 ```
 ### Running
-```python3 faceRecWeb.py```
+```python3 main.py```
